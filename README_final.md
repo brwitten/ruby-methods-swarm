@@ -4,7 +4,7 @@
 
 The **squeeze!** command allows you to remove repeating characters from a string. You can remove specific repeating characters, ranges within the alphabet, or all repeating letters.
 
-![alt text](https://tenor.com/view/squeeze-lemon-lemonade-gif-4891114)
+![alt text](https://media.giphy.com/media/I8zGepJNKOGL6/giphy.gif)
 
 Example:
 
