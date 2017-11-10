@@ -6,7 +6,6 @@ The **squeeze!** command allows you to remove repeating characters from a string
 
 ![alt text](https://media.giphy.com/media/I8zGepJNKOGL6/giphy.gif)
 
-Example:
 
 Here are some examples of strings being transformed by squeeze:
 
