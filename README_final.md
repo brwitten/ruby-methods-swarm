@@ -1,4 +1,4 @@
-## <img src="https://avatars2.githubusercontent.com/u/210414?v=4&s=200" height="20px"> Ruby Method: `Array.flatten!`
+## <img src="https://avatars2.githubusercontent.com/u/210414?v=4&s=200" height="20px"> Ruby Method: `String.squeeze!`
 
 ### **DataType: String**
 
