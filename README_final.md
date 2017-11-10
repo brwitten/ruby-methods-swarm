@@ -1,49 +1,25 @@
 ## <img src="https://avatars2.githubusercontent.com/u/210414?v=4&s=200" height="20px"> Ruby Method: `Array.flatten!`
 
-### **DataType: Array**
+### **DataType: String**
 
-The **flatten!** command is awesome and I love that it has the bang on it.  It is an array method that reduces a multiple dimension array into a one dimension array.  It performs this action on the originating (`self`) array
+The **squeeze!** command allows you to remove repeating characters from a string. You can remove specific repeating characters, ranges within the alphabet, or all repeating letters.
 
-![](https://media.giphy.com/media/12qYxZDaxx4zaU/giphy.gif)
+![](https://tenor.com/view/squeeze-lemon-lemonade-gif-4891114)
 
 Example:
 
-Here is an array of hobbies that are loosely associated.  Some are random so aren't associated at all.
+Here are some examples of strings being transformed by squeeze:
 
 ```ruby
-  hobbies = [
-    ['camping', 'hiking', 'kayaking'] ,
-    [ 'guitar', 'bass', 'synth'] ,
-    ['arduino', 'IoT'] ,
-    'woodworking',
-    'gardening'
-  ]
-  hobbies.flatten! => [
-    "camping",
-    "hiking",
-    "kayaking",
-    "guitar",
-    "bass",
-    "synth",
-    "arduino",
-    "IoT",
-    "woodworking",
-    "gardening"
-  ]
-```
-Calling `flatten!` on the hobbies array turns this two-dimensional array to a single or 'flattened' array.
+  repeat_string = "Well, hello!"
+  repeat_string.squeeze! => "Wel, helo!"
 
-Here's a pretty far-out example of `flatten!` taken to an extreme:
+  repeat_again_string = "Aahhhhhhhh!"
+  repeat_again_string.squeeze!("h") => "Aah!"
 
-```ruby
-wacky_array = [ [1, 2, ["three", "four", ['f', 'i', 'v', 'e']]]]
-wacky_array.flatten! => [1, 2, "three", "four", "f", "i", "v", "e"]
-```
-**Note**: If I all `flatten!` on a one-dimensional array it will return a `nil`
+  repeat_again_again_string = "   What    is     new"
+  repeat_again_again_string.squeeze!(" ") => "What is new"
 
-```ruby
-primary_colors = ['red', 'yellow', 'blue']
-primary_colors.flatten! => nil
 ```
 
-Since this has a bang at the end it replaces the original array; this is known as being executed 'in place.'  The non-`in place` version will return a **new** array of the original array in a flattened form.
+Since this has a bang at the end it replaces the original array; this is known as being executed 'in place.'
